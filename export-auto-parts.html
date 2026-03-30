@@ -233,11 +233,16 @@
             <h2>Request Auto Parts Details</h2>
           </div>
 
-          <form class="contact-form">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Company" />
-            <input type="email" placeholder="Email" />
-            <textarea rows="5" placeholder="Tell us what parts, brands, quantities, or export markets you need support with"></textarea>
+          <form class="contact-form" action="https://formsubmit.co/dereviankovlad1@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New auto parts export inquiry | Bravada" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="service" value="Export of auto parts" />
+            <input type="hidden" name="page" value="Export of Auto Parts" />
+            <input type="text" name="name" placeholder="Name" autocomplete="name" required />
+            <input type="text" name="company" placeholder="Company" autocomplete="organization" />
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required />
+            <textarea name="message" rows="5" placeholder="Tell us what parts, brands, quantities, or export markets you need support with" required></textarea>
             <button type="submit" class="primary-btn small">Send Request</button>
           </form>
         </div>
