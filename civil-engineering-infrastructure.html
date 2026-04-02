@@ -228,12 +228,12 @@
           <p class="about-lead">
             Tell us what project categories, quantities, or procurement priorities you are targeting, and we will help structure the right civil engineering and infrastructure supply approach.
           </p>
-          <form class="contact-form" action="https://formsubmit.co/dereviankovlad1@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New civil engineering & infrastructure inquiry | Bravada" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
+          <form class="contact-form emailjs-form" id="contact-form-civil-engineering-infrastructure">
             <input type="hidden" name="service" value="Civil engineering & infrastructure" />
             <input type="hidden" name="page" value="Civil Engineering & Infrastructure" />
+            <input type="hidden" name="page_url" value="" />
+            <input type="hidden" name="submitted_at" value="" />
+            <input type="text" name="website" class="emailjs-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <input type="text" name="name" placeholder="Name" autocomplete="name" required />
             <input type="text" name="company" placeholder="Company" autocomplete="organization" />
             <input type="email" name="email" placeholder="Email" autocomplete="email" required />
@@ -254,7 +254,7 @@
 
       <div class="reveal reveal-up delay-2">
         <h4>Phone</h4>
-        <p>+43 1233 324 2000<br>info@bravada-example.com</p>
+        <p>+36303283279<br>bravadokft@gmail.com</p>
       </div>
 
       <div class="reveal reveal-up delay-3">
@@ -268,6 +268,10 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="emailjs-config.js"></script>
+  <script src="emailjs-forms.js"></script>
 
   <script>
     (function () {
